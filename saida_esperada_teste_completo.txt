@@ -1,5 +1,5 @@
 IMP
-Min: +INF
+
 PRE 0
 -INF
 SUC 0
@@ -25,4 +25,4 @@ PRE 4294967295
 IMP
 Min: 65536
 IMP
-Min: +INF
+

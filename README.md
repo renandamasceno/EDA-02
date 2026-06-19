@@ -53,7 +53,7 @@ Quando nao existe sucessor, o programa imprime `+INF`. Quando nao existe predece
 
 Na operacao `IMP`, o programa imprime o menor elemento da estrutura e, em seguida, os clusters nao vazios do primeiro nivel. Os clusters e os valores internos sao impressos em ordem crescente.
 
-Se a estrutura estiver vazia durante uma operacao `IMP`, o programa imprime `Min: +INF`.
+Se a estrutura estiver vazia durante uma operacao `IMP`, o programa imprime apenas uma linha vazia apos a linha `IMP`.
 
 ## Testes
 

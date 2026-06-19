@@ -412,6 +412,13 @@ impl VanEmdeBoas {
             return elements;
         }
 
+        if self.bits == 1 {
+            if self.max != self.min {
+                elements.push(self.max.expect("non-empty vEB must have a maximum"));
+            }
+            return elements;
+        }
+
         for high in self.clusters.keys_sorted() {
             let cluster = self
                 .clusters
@@ -427,7 +434,7 @@ impl VanEmdeBoas {
 
     fn first_level_string(&self) -> String {
         let Some(minimum) = self.min else {
-            return "Min: +INF".to_string();
+            return String::new();
         };
 
         let mut parts = vec![format!("Min: {}", minimum)];
