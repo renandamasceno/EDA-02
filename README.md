@@ -85,6 +85,7 @@ Tabela de dispersão propria, implementada com encadeamento separado.
 
 Ela armazena os clusters da árvore van Emde Boas e usa redimensionamento dinâmico:
 
+- busca, inserção e remoção têm tempo esperado `O(1)`, assumindo distribuição uniforme da função de hash;
 - table doubling: dobra a capacidade quando a taxa de ocupação chega a aproximadamente 75%;
 - table halving: reduz a capacidade pela metade quando a taxa de ocupação cai para aproximadamente 25%;
 - a capacidade minima e 4.
